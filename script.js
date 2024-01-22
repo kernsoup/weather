@@ -2,7 +2,7 @@ const API_key = "b8dc8baac4615efab383da371c281d1c";
 
 const fetchWeatherData = async() => {
     try {
-        const LAT = 41.51;
+        const LAT = 61.51;
         const LON = 23.79;
         const currentWeather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${API_key}&units=metric`);
         const currentData = await currentWeather.json();
